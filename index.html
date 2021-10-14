@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>BCoders</title>
+ 
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="fontawesome/css/all.css"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+</head>
+
+<body>
+  <!-- Container for navigation -->
+  <div class="navigation">
+     <span><a href="#"><i class="fas fa-home"></i></a></span>
+     <span><a href="#"><i class="fab fa-github"></i></a></span>
+     <span><a href="#"><i class="fab fa-facebook"></i></a></span>
+     <span><a href="#"><i class="fas fa-question"></i></a></span>
+     <input type="search" name="search-project" id="search-project" placeholder="Search Project..." onkeyup="findProject()" />
+  </div>
+  <!-- Main Container -->
+  <div class="main">
+     <!-- Welcome Message -->
+     <div class="welcome-message">
+        <h3>Welcome to BCoders</h3>
+        <p>Download projects source code and learn by them for free.</p>
+     </div>
+     <!-- ? -->
+     <div class="compilers welcome-message">
+        <h3>Android Compilers</h3>
+        <div class="icon">
+           <a href="https://bit.ly/3oFR9GH"><img src="https://dl.dropbox.com/s/8hqrq83llrpkg88/PicsArt_10-13-09.33.57.jpg?dl=0" alt="SPCK Editor" /></a>
+           <a href="https://bit.ly/3iAL6Q0"><img src="https://dl.dropbox.com/s/qhkrhx1e66ms9ci/1634131745974.jpg?dl=0" alt="Acode Editor" /></a>
+           <a href="https://bit.ly/2YoE9dl"><img src="https://dl.dropbox.com/s/878tu9asghfb0nr/PicsArt_10-13-09.33.23.jpg?dl=0" alt="QuickEdit" /></a>
+        </div>
+     </div>
+     <hr />
+     <!-- ? -->
+     <ul id="list-projects">
+        <li class="project welcome-message" data-aos="fade-right">
+           <span id="mode-medium">Medium</span>
+           <a href="#">
+              <h3>How to make a glass effect?</h3>
+              <p>Learn how to make a glassy effect using HTML and CSS</p>
+           </a>
+        </li>
+        <li class="project welcome-message" data-aos="fade-right">
+           <a href="#">
+              <span id="mode-easy">Easy</span>
+              <h3>Images tutorial #1</h3>
+              <p>Learn how to disply and make a rounded images.</p>
+           </a>
+        </li>
+        <li class="project welcome-message" data-aos="fade-right">
+           <a href="#">
+              <span id="mode-easy">Easy</span>
+              <h3>Login form tutorial #1</h3>
+              <p>Learn how to make login form using HTML and CSS.</p>
+           </a>
+        </li>
+        <li class="project welcome-message" data-aos="fade-right">
+           <a href="#">
+              <span id="mode-easy">Easy</span>
+              <h3>Registration form tutorial #1</h3>
+              <p>Learn how to make registration form using HTML and CSS.</p>
+           </a>
+        </li>
+        <li class="project welcome-message" data-aos="fade-right">
+           <span id="mode-easy">Easy</span>
+           <a href="#">
+              <h3>How to make loading process tutorial #1</h3>
+              <p>Learn how to make loading process using HTML and CSS</p>
+           </a>
+        </li>
+        <li class="project welcome-message" data-aos="fade-right" onclick="html5()">
+           <span id="mode-easy">Easy</span>
+           <a href="#" id="audiolink">
+              <h3>How to play audio tutorial #1</h3>
+              <p>Learn how to play audio using HTML</p>
+           </a>
+        </li>
+        <li class="project welcome-message" data-aos="fade-right">
+           <span id="mode-medium">Medium</span>
+           <a href="#">
+              <h3>How to make music player tutorial #1</h3>
+              <p>Learn how to play and make simple music player using HTML, CSS and JavaScript</p>
+           </a>
+        </li>
+        <li class="project welcome-message" data-aos="fade-right">
+           <span id="mode-easy">Easy</span>
+           <a href="#">
+              <h3>Box and text shadow tutorial #1</h3>
+              <p>Learn how to make box and text shadow using HTML and CSS</p>
+           </a>
+        </li>
+     </ul>
+     <div class="footer">
+      <p>Published:</p>
+      <p>Developer: DenZ</p>
+     </div>
+  </div>
+  <!-- Project -->
+  <script src="main.js"></script>
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="filter.js"></script>
+  <script src="actions.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+     AOS.init();
+  </script>
+</body>
+</html>

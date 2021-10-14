@@ -1,0 +1,173 @@
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+}
+body {
+  max-width: 100%;
+  margin:0;
+  padding:0;
+  background-image: url("https://dl.dropbox.com/s/6i9pfnhymic92r5/c5c0b029cca1b1d4e27becc6faf1e09a.jpg?dl=0");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*Navigation*/
+.navigation{
+   width: inherit;
+   height: auto;
+   background: limegreen;
+   padding: 5px;
+   position: sticky;
+   top: 0;
+   display: flex;
+   z-index: 100;
+}
+.navigation span {
+   font-size: 27px;
+   padding: 0;
+   margin: 3px 10px 3px 10px;
+   border-radius: 70px;
+}
+.navigation span a{
+   color: #fff;
+   text-decoration: none;
+}
+.navigation input[type="search"]{
+  width: 100%;
+  height: auto;
+  padding: 7px;
+  margin: 3px 10px 3px 10px;
+  font-size: 17px;
+  border: none;
+  border-radius: 20px;
+}
+/*Main*/
+.main{
+   width: inherit;
+   height: 100%;
+   padding: 0 30px 0 30px;
+}
+/*Welcome Message*/
+.welcome-message{
+   width: inherit;
+   height: auto;
+   padding: 10px;
+   margin: 10px 0 10px 0;
+   box-shadow: inset 0 0 15px 0 white;
+   background: inherit;
+}
+.welcome-message h3, p{
+   color: #fff;
+}
+.welcome-message p{
+   text-indent: 30px;
+}
+.welcome-message:before{
+   content: "";
+   background: inherit;
+   filter: blur(10px);
+}
+/*-----*/
+.compilers .icon{
+   display: flex;
+   width: inherit;
+   height: auto;
+}
+.compilers .icon img{
+   width: 90px;
+   height: 90px;
+   margin: 10px;
+   border-radius: 20px;
+}
+/*List Proect*/
+#list-projects{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   position: static;
+   display: inline;
+}
+#list-projects li{
+   position: relative;
+}
+#list-projects li:hover {
+   box-shadow: 2px 2px 50px lightgrey;
+}
+#list-projects li #mode-easy,#mode-medium,#mode-hard{
+   color: white;
+   text-transform: uppercase;
+   width: auto;
+   height: auto;
+   padding: 7px;
+   font-size: 7px;
+   border-radius: 30px;
+   position: absolute;
+   top: 3px;
+   right: 5px;
+   text-shadow: none
+}
+#mode-easy{
+   background-color: limegreen;
+}
+#mode-medium{
+   background-color: deepskyblue;
+}
+#mode-hard{
+   background-color: orangered;
+}
+#list-projects li a{
+   text-decoration: none;
+   text-shadow: 2px 2px 0 #000;
+}
+/*----*/
+.footer{
+  width: inherit;
+  height: auto;
+  padding: 7px;
+}
+.footer p{
+  font-size: 13px;
+  color: ghostwhite;
+  margin: 5px;
+  padding:0;
+}
+/*Media Quaries*/
+@media screen and (max-width: 550px){
+   .navigation span{
+      font-size: 20px;
+      margin: 3px 10px 3px 10px;
+   }
+   .navigation input[type="search"]{
+      font-size: 13px;
+      margin: 3px 10px 3px 10px;
+   }
+   #list-projects{
+      position: static;
+      display: inline;
+   }
+}
+@media screen and (min-width:700px){
+   .navigation span{
+      font-size: 30px;
+      margin: 3px 15px 3px 15px;
+   }
+   .navigation input[type="search"]{
+      font-size: 20px;
+      margin: 3px 15px 3px 15px;
+   }
+   #list-projects{
+      position: static;
+      display: inline;
+   }
+   #list-projects li h3, .welcome-message h3{
+      font-size: 27px;
+   }
+   #list-projects li p, .welcome-message p{
+      font-size: 25px;
+   }
+   .footer p{
+      font-size: 25px;
+   }
+}
